@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Movie Mood Matcher</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background: #111;
+      color: #eee;
+      padding: 2rem;
+      max-width: 600px;
+      margin: auto;
+    }
+    input, button, textarea {
+      width: 100%;
+      padding: 0.75rem;
+      margin-top: 1rem;
+      font-size: 1rem;
+    }
+    .chat {
+      white-space: pre-wrap;
+      margin-top: 2rem;
+    }
+    .message {
+      margin-bottom: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <h1>Movie Mood Matcher</h1>
+  <p>Describe what you're in the mood to watch, or say something like: <br><i>"I want something like <b>Gone Girl</b>"</i></p>
+  
+  <textarea id="userInput" rows="3" placeholder="I'm in the mood for..."></textarea>
+  <button onclick="sendMessage()">Send</button>
+
+  <div class="chat" id="chatArea"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
